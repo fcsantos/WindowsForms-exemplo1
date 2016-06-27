@@ -39,6 +39,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
@@ -55,16 +56,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutorCRUD\AutorCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutorCRUD\AutorCadastro.Designer.cs">
+      <DependentUpon>AutorCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutorCRUD\AutorConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutorCRUD\AutorConsulta.Designer.cs">
+      <DependentUpon>AutorConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditoraCRUD\EditoraCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditoraCRUD\EditoraCadastro.Designer.cs">
+      <DependentUpon>EditoraCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditoraCRUD\EditoraConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditoraCRUD\EditoraConsulta.Designer.cs">
+      <DependentUpon>EditoraConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAutor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAutor.Designer.cs">
       <DependentUpon>FormAutor.cs</DependentUpon>
     </Compile>
+    <Compile Include="LivroCRUD\LivroCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LivroCRUD\LivroCadastro.Designer.cs">
+      <DependentUpon>LivroCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LivroCRUD\LivroConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LivroCRUD\LivroConsulta.Designer.cs">
+      <DependentUpon>LivroConsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AutorCRUD\AutorCadastro.resx">
+      <DependentUpon>AutorCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutorCRUD\AutorConsulta.resx">
+      <DependentUpon>AutorConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditoraCRUD\EditoraCadastro.resx">
+      <DependentUpon>EditoraCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditoraCRUD\EditoraConsulta.resx">
+      <DependentUpon>EditoraConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAutor.resx">
       <DependentUpon>FormAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LivroCRUD\LivroCadastro.resx">
+      <DependentUpon>LivroCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LivroCRUD\LivroConsulta.resx">
+      <DependentUpon>LivroConsulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,6 +159,7 @@
       <Name>Projeto.Entidade</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

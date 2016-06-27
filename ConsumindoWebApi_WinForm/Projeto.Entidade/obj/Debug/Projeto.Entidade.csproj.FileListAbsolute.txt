@@ -1,5 +1,4 @@
-c:\users\fcsantos\documents\visual studio 2015\Projects\ConsumindoWebApi_WinForm\Projeto.Entidade\bin\Debug\Projeto.Entidade.dll
-c:\users\fcsantos\documents\visual studio 2015\Projects\ConsumindoWebApi_WinForm\Projeto.Entidade\bin\Debug\Projeto.Entidade.pdb
-c:\users\fcsantos\documents\visual studio 2015\Projects\ConsumindoWebApi_WinForm\Projeto.Entidade\obj\Debug\Projeto.Entidade.csprojResolveAssemblyReference.cache
-c:\users\fcsantos\documents\visual studio 2015\Projects\ConsumindoWebApi_WinForm\Projeto.Entidade\obj\Debug\Projeto.Entidade.dll
-c:\users\fcsantos\documents\visual studio 2015\Projects\ConsumindoWebApi_WinForm\Projeto.Entidade\obj\Debug\Projeto.Entidade.pdb
+C:\Users\Fcsantos\Documents\Visual Studio 2015\Projects\ConsumindoWebApi_WinForm\Projeto.Entidade\bin\Debug\Projeto.Entidade.dll
+C:\Users\Fcsantos\Documents\Visual Studio 2015\Projects\ConsumindoWebApi_WinForm\Projeto.Entidade\bin\Debug\Projeto.Entidade.pdb
+C:\Users\Fcsantos\Documents\Visual Studio 2015\Projects\ConsumindoWebApi_WinForm\Projeto.Entidade\obj\Debug\Projeto.Entidade.dll
+C:\Users\Fcsantos\Documents\Visual Studio 2015\Projects\ConsumindoWebApi_WinForm\Projeto.Entidade\obj\Debug\Projeto.Entidade.pdb

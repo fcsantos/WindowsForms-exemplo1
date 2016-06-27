@@ -16,7 +16,7 @@ namespace Projeto.Win
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormAutor());
+            Application.Run(new FormHome());
         }
     }
 }

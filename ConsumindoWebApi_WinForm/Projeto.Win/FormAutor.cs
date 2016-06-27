@@ -82,7 +82,7 @@ namespace Projeto.Win
                     if (response.IsSuccessStatusCode)
                     {
                         var AutorJsonString = await response.Content.ReadAsStringAsync();
-                        dgvDados.DataSource = JsonConvert.DeserializeObject<Autor[]>(AutorJsonString).ToList();
+                        dgvDados.DataSource = JsonConvert.DeserializeObject<Projeto.Entidade.Autor[]>(AutorJsonString).ToList();
                     }
                     else
                     {
@@ -104,7 +104,7 @@ namespace Projeto.Win
                     if (response.IsSuccessStatusCode)
                     {
                         var AutorJsonString = await response.Content.ReadAsStringAsync();
-                        bsDados.DataSource = JsonConvert.DeserializeObject<Autor>(AutorJsonString);
+                        bsDados.DataSource = JsonConvert.DeserializeObject<Projeto.Entidade.Autor>(AutorJsonString);
                         dgvDados.DataSource = bsDados;
                     }
                     else
@@ -122,9 +122,9 @@ namespace Projeto.Win
             {
                 var response = await client.GetAsync(URL + "/listar");
                 var AutorJsonString = await response.Content.ReadAsStringAsync();
-                var ultimoAutor = JsonConvert.DeserializeObject<Autor[]>(AutorJsonString).Count();
+                var ultimoAutor = JsonConvert.DeserializeObject<Projeto.Entidade.Autor[]>(AutorJsonString).Count();
                 ultimoAutor += 1;
-                var a = new Autor();
+                var a = new Projeto.Entidade.Autor();
                 a.Nome = "Autor " + ultimoAutor;
 
                 var serializedAutor = JsonConvert.SerializeObject(a);
@@ -149,9 +149,9 @@ namespace Projeto.Win
             {
                 var response = await client.GetAsync(URL + "/listar");
                 var AutorJsonString = await response.Content.ReadAsStringAsync();
-                var ultimoAutor = JsonConvert.DeserializeObject<Autor[]>(AutorJsonString).Count();
+                var ultimoAutor = JsonConvert.DeserializeObject<Projeto.Entidade.Autor[]>(AutorJsonString).Count();
                 ultimoAutor += 100;
-                var a = new Autor();
+                var a = new Projeto.Entidade.Autor();
                 a.IdAutor = id;
                 a.Nome = "Autor " + ultimoAutor;
 
@@ -186,21 +186,6 @@ namespace Projeto.Win
                 }
             }
             ListarAutores();
-        }
-
-            //URL = txtURL.Text + "/excluir";
-            //using(var client = new HttpClient())
-            //{
-            //    var response = await client.DeleteAsync(string.Format("{0}?id={1}", URL, id.ToString()));
-            //    if (response.IsSuccessStatusCode)
-            //    {
-            //        MessageBox.Show("Autor excluído com sucesso");
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Falha ao excluir o autor  : " + response.StatusCode);
-            //    }
-            //}
-            //ListarAutores();        
+        }       
     }
 }

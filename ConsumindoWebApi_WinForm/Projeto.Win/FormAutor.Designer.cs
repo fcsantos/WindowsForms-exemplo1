@@ -128,7 +128,7 @@
             this.Controls.Add(this.txtURL);
             this.Controls.Add(this.lblURL);
             this.Name = "FormAutor";
-            this.Text = "Form1";
+            this.Text = "CRUD Autor";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
