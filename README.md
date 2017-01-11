@@ -1,6 +1,6 @@
 # WindowsForms-exemplo1
 
-Consumindo webapi do exemplo 2 com windows forms
+Consumindo webapi do "WebApi-exemplo2" com windows forms
 
 Em andamento
 
