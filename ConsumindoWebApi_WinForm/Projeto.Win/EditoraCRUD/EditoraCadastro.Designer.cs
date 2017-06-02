@@ -1,4 +1,4 @@
-﻿namespace Projeto.Win.Editora
+﻿namespace Projeto.Win.EditoraCRUD
 {
     partial class EditoraCadastro
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblNomeEditora = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNomeEditora = new System.Windows.Forms.TextBox();
             this.btnCadastrarEditora = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -43,12 +43,13 @@
             this.lblNomeEditora.TabIndex = 0;
             this.lblNomeEditora.Text = "Nome da Editora:";
             // 
-            // textBox1
+            // txtNomeEditora
             // 
-            this.textBox1.Location = new System.Drawing.Point(154, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(376, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtNomeEditora.Location = new System.Drawing.Point(154, 35);
+            this.txtNomeEditora.MaxLength = 150;
+            this.txtNomeEditora.Name = "txtNomeEditora";
+            this.txtNomeEditora.Size = new System.Drawing.Size(376, 20);
+            this.txtNomeEditora.TabIndex = 1;
             // 
             // btnCadastrarEditora
             // 
@@ -56,8 +57,9 @@
             this.btnCadastrarEditora.Name = "btnCadastrarEditora";
             this.btnCadastrarEditora.Size = new System.Drawing.Size(117, 41);
             this.btnCadastrarEditora.TabIndex = 2;
-            this.btnCadastrarEditora.Text = "Cadastrar";
+            this.btnCadastrarEditora.Text = "Salvar";
             this.btnCadastrarEditora.UseVisualStyleBackColor = true;
+            this.btnCadastrarEditora.Click += new System.EventHandler(this.btnCadastrarEditora_Click);
             // 
             // btnVoltar
             // 
@@ -67,6 +69,7 @@
             this.btnVoltar.TabIndex = 3;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // EditoraCadastro
             // 
@@ -75,7 +78,7 @@
             this.ClientSize = new System.Drawing.Size(594, 302);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnCadastrarEditora);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNomeEditora);
             this.Controls.Add(this.lblNomeEditora);
             this.Name = "EditoraCadastro";
             this.Text = "Editora Cadastro";
@@ -87,7 +90,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblNomeEditora;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNomeEditora;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnCadastrarEditora;
     }

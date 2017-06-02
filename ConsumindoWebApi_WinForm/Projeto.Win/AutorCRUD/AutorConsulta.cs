@@ -1,17 +1,12 @@
 ﻿using Newtonsoft.Json;
+using Projeto.Entidade;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Projeto.Win.Autor
+namespace Projeto.Win.AutorCRUD
 {
     public partial class AutorConsulta : Form
     {
@@ -19,13 +14,13 @@ namespace Projeto.Win.Autor
 
         public AutorConsulta()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            AddButtons();
         }
 
         private void autorConsulta_Load(object sender, EventArgs e)
         {
-            ListarAutores();
-            AddButtons();
+            ListarAutores();            
         }
 
         private void AddButtons()
@@ -36,31 +31,37 @@ namespace Projeto.Win.Autor
             btnExcluir.Name = "btnExcluirAutor";
             btnExcluir.Text = "Excluir";
             btnExcluir.UseColumnTextForButtonValue = true;
+            btnExcluir.Width = 80;
             dgvAutor.Columns.Add(btnExcluir);
 
-            //ADD ExcluirButton
+            //ADD AtualizarButton
             DataGridViewButtonColumn btnAtualizar = new DataGridViewButtonColumn();
             btnAtualizar.HeaderText = "Atualizar Autor";
             btnAtualizar.Name = "btnAtualizarAutor";
             btnAtualizar.Text = "Atualizar";
             btnAtualizar.UseColumnTextForButtonValue = true;
+            btnAtualizar.Width = 85;
             dgvAutor.Columns.Add(btnAtualizar);
-
-            dgvAutor.CellClick += new DataGridViewCellEventHandler(dgvAutor_CellClick);
         }
 
         private void dgvAutor_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            var IdAutor = (Int32)dgvAutor[0, e.RowIndex].Value;
+            var autor = new Autor();
+            autor.IdAutor = (Int32)dgvAutor[0, e.RowIndex].Value;
+            autor.Nome = dgvAutor[1, e.RowIndex].Value.ToString();
 
             if (dgvAutor.Columns[e.ColumnIndex].Name == "btnExcluirAutor")
             {
-                ExcluirAutor(IdAutor);
+                ExcluirAutor(autor.IdAutor);
             }
             if (dgvAutor.Columns[e.ColumnIndex].Name == "btnAtualizarAutor")
             {
-                AutorCadastro cad = new AutorCadastro();
-                cad.Show();
+                if (Application.OpenForms.OfType<FormHome>().Any())
+                {
+                    Application.OpenForms.OfType<AutorConsulta>().First().Close();
+                    AutorCadastro cad = new AutorCadastro(autor);
+                    cad.Show();
+                }
             }
 
             autorConsulta_Load(sender, e);
@@ -76,7 +77,7 @@ namespace Projeto.Win.Autor
                     {
                         var AutorJsonString = await response.Content.ReadAsStringAsync();
                         dgvAutor.AutoGenerateColumns = false;
-                        dgvAutor.DataSource = JsonConvert.DeserializeObject<Projeto.Entidade.Autor[]>(AutorJsonString).ToList();
+                        dgvAutor.DataSource = JsonConvert.DeserializeObject<Autor[]>(AutorJsonString).ToList();
                     }
                     else
                     {
@@ -93,13 +94,19 @@ namespace Projeto.Win.Autor
                 var response = await client.DeleteAsync(string.Format("{0}?id={1}", URL + "/excluir", id.ToString()));
                 if (response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Autor excluído com sucesso");
+                    if (MessageBox.Show("Autor excluído com sucesso", "Confirmar", MessageBoxButtons.OK) == DialogResult.OK){}
                 }
                 else
                 {
                     MessageBox.Show("Falha ao excluir o autor  : " + response.StatusCode);
                 }
             }
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<FormHome>().Any())
+                Application.OpenForms.OfType<AutorConsulta>().First().Close();
         }
     }
 }

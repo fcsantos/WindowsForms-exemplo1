@@ -16,6 +16,8 @@ namespace Projeto.Entidade
         public virtual string Categoria { get; set; }
         public virtual int AutorId { get; set; }
         public virtual int EditoraId { get; set; }
+        public virtual string NomeAutor { get; set; }
+        public virtual string NomeEditora { get; set; }
 
         #region Relacionamentos
         //public virtual Autor Autor { get; set; }

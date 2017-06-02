@@ -1,4 +1,4 @@
-﻿namespace Projeto.Win.Autor
+﻿namespace Projeto.Win.AutorCRUD
 {
     partial class AutorCadastro
     {
@@ -32,6 +32,7 @@
             this.txtNomeAutor = new System.Windows.Forms.TextBox();
             this.btnCadastrarAutor = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.lblCodAutor = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNomeAutor
@@ -46,6 +47,7 @@
             // txtNomeAutor
             // 
             this.txtNomeAutor.Location = new System.Drawing.Point(154, 35);
+            this.txtNomeAutor.MaxLength = 150;
             this.txtNomeAutor.Name = "txtNomeAutor";
             this.txtNomeAutor.Size = new System.Drawing.Size(375, 20);
             this.txtNomeAutor.TabIndex = 1;
@@ -56,7 +58,7 @@
             this.btnCadastrarAutor.Name = "btnCadastrarAutor";
             this.btnCadastrarAutor.Size = new System.Drawing.Size(117, 41);
             this.btnCadastrarAutor.TabIndex = 2;
-            this.btnCadastrarAutor.Text = "Cadastrar";
+            this.btnCadastrarAutor.Text = "Salvar";
             this.btnCadastrarAutor.UseVisualStyleBackColor = true;
             this.btnCadastrarAutor.Click += new System.EventHandler(this.btnCadastrarAutor_Click);
             // 
@@ -70,11 +72,20 @@
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
+            // lblCodAutor
+            // 
+            this.lblCodAutor.AutoSize = true;
+            this.lblCodAutor.Location = new System.Drawing.Point(34, 13);
+            this.lblCodAutor.Name = "lblCodAutor";
+            this.lblCodAutor.Size = new System.Drawing.Size(0, 13);
+            this.lblCodAutor.TabIndex = 4;
+            // 
             // AutorCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 302);
+            this.Controls.Add(this.lblCodAutor);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnCadastrarAutor);
             this.Controls.Add(this.txtNomeAutor);
@@ -92,5 +103,6 @@
         private System.Windows.Forms.TextBox txtNomeAutor;
         private System.Windows.Forms.Button btnCadastrarAutor;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Label lblCodAutor;
     }
 }

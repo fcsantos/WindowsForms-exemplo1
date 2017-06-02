@@ -27,37 +27,37 @@ namespace Projeto.Win
 
         private void cadastroAutor_Click(object sender, EventArgs e)
         {
-            Autor.AutorCadastro cad = new Autor.AutorCadastro();
+            AutorCRUD.AutorCadastro cad = new AutorCRUD.AutorCadastro();
             cad.Show();
         }
 
         private void consultaAutor_Click(object sender, EventArgs e)
         {
-            Autor.AutorConsulta con = new Autor.AutorConsulta();
+            AutorCRUD.AutorConsulta con = new AutorCRUD.AutorConsulta();
             con.Show();
         }
 
         private void cadastroEditora_Click(object sender, EventArgs e)
         {
-            Editora.EditoraCadastro cad = new Editora.EditoraCadastro();
+            EditoraCRUD.EditoraCadastro cad = new EditoraCRUD.EditoraCadastro();
             cad.Show();
         }
 
         private void consultaEditora_Click(object sender, EventArgs e)
         {
-            Editora.EditoraConsulta con = new Editora.EditoraConsulta();
+            EditoraCRUD.EditoraConsulta con = new EditoraCRUD.EditoraConsulta();
             con.Show();
         }
 
         private void cadastroLivro_Click(object sender, EventArgs e)
         {
-            Livro.LivroCadastro cad = new Livro.LivroCadastro();
+            LivroCRUD.LivroCadastro cad = new LivroCRUD.LivroCadastro();
             cad.Show();
         }
 
         private void consultaLivro_Click(object sender, EventArgs e)
         {
-            Livro.LivroConsulta con = new Livro.LivroConsulta();
+            LivroCRUD.LivroConsulta con = new LivroCRUD.LivroConsulta();
             con.Show();
         }
     }
