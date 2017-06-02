@@ -26,8 +26,8 @@ namespace Projeto.Win.LivroCRUD
             id = livro.IdLivro;
             txtTitulo.Text = livro.Titulo;
             txtISBN.Text = livro.ISBN;
-            cbAutor.SelectedValue = livro.;
-            cbEditora.SelectedValue = livro.EditoraId;
+            cbAutor.SelectedValue = livro.AutorId;
+            cbEditora.SelectedValue = livro.EditoraId;            
             txtCategoria.Text = livro.Categoria;
             txtGenero.Text = livro.Genero;
             txtSinopse.Text = livro.Sinopse;            
@@ -38,9 +38,7 @@ namespace Projeto.Win.LivroCRUD
         private void LivroCadastro_Load(object sender, EventArgs e)
         {
             ListarEditoras();
-            //cbEditora.SelectedIndex = 0;
             ListarAutores();
-            //cbAutor.SelectedIndex = 0;
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -108,7 +106,7 @@ namespace Projeto.Win.LivroCRUD
                         var EditoraJsonString = await response.Content.ReadAsStringAsync();
                         cbEditora.DisplayMember = "Nome";
                         cbEditora.ValueMember = "IdEditora";                      
-                        cbEditora.DataSource = JsonConvert.DeserializeObject<Editora[]>(EditoraJsonString).ToList();
+                        cbEditora.DataSource = JsonConvert.DeserializeObject<Editora[]>(EditoraJsonString).ToList();                        
                     }
                     else
                     {

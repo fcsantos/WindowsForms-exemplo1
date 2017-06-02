@@ -32,13 +32,13 @@ C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_W
 C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.csprojResolveAssemblyReference.cache
 C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.AutorCRUD.AutorCadastro.resources
 C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.AutorCRUD.AutorConsulta.resources
+C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.EditoraCRUD.EditoraCadastro.resources
+C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.EditoraCRUD.EditoraConsulta.resources
 C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.FormHome.resources
 C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.FormAutor.resources
+C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.LivroCRUD.LivroCadastro.resources
+C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.LivroCRUD.LivroConsulta.resources
 C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.Properties.Resources.resources
 C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.csproj.GenerateResource.Cache
 C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.exe
 C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.pdb
-C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.EditoraCRUD.EditoraCadastro.resources
-C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.EditoraCRUD.EditoraConsulta.resources
-C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.LivroCRUD.LivroCadastro.resources
-C:\Users\felipe santos\Documents\GitHub\WindowsForms-exemplo1\ConsumindoWebApi_WinForm\Projeto.Win\obj\Debug\Projeto.Win.LivroCRUD.LivroConsulta.resources

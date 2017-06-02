@@ -52,8 +52,10 @@ namespace Projeto.Win.LivroCRUD
             livro.ISBN = dgvLivro[2, e.RowIndex].Value.ToString();
             livro.Categoria = dgvLivro[3, e.RowIndex].Value.ToString();
             livro.Genero = dgvLivro[4, e.RowIndex].Value.ToString();
+            livro.NomeAutor = dgvLivro[5, e.RowIndex].Value.ToString();
             livro.AutorId = Convert.ToInt32(dgvLivro[6, e.RowIndex].Value);
-            livro.EditoraId = Convert.ToInt32(dgvLivro[8, e.RowIndex].Value);
+            livro.NomeEditora = dgvLivro[7, e.RowIndex].Value.ToString();
+            livro.EditoraId = Convert.ToInt32(dgvLivro[8, e.RowIndex].Value);            
             livro.Sinopse = dgvLivro[9, e.RowIndex].Value.ToString();
 
 
